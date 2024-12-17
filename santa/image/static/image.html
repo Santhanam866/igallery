@@ -1,31 +1,3 @@
-# Ex.08 Design of Interactive Image Gallery
-## Date:17\12\2024
-
-## AIM:
-To design a web application for an inteactive image gallery with minimum five images.
-
-## DESIGN STEPS:
-
-### Step 1:
-Clone the github repository and create Django admin interface.
-
-### Step 2:
-Change settings.py file to allow request from all hosts.
-
-### Step 3:
-Use CSS for positioning and styling.
-
-### Step 4:
-Write JavaScript program for implementing interactivity.
-
-### Step 5:
-Validate the HTML and CSS code.
-
-### Step 6:
-Publish the website in the given URL.
-
-## PROGRAM :
-```
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -41,8 +13,8 @@ Publish the website in the given URL.
         }
 
         body {
-            background-color: rgb(10, 233, 233);
-            font-family: 'Roboto', sans-serif;
+            background-image:linear-gradient(to left,rgb(62, 135, 195),rgb(85, 207, 110));
+            
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -51,12 +23,15 @@ Publish the website in the given URL.
         }
 
         header {
+            font-family: 'Poppins';
+            font-variant: small-caps;
             font-size: 2.5rem;
             margin-top: 30px;
             color: #222;
         }
 
         .photo-grid {
+            margin-top: 3%;
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
             gap: 16px;
@@ -137,6 +112,10 @@ Publish the website in the given URL.
             width: 100%;
             position: fixed;
             bottom: 0;
+            letter-spacing: 1px;
+        }
+        .name{
+            color: lightgreen;
         }
     </style>
 </head>
@@ -155,11 +134,11 @@ Publish the website in the given URL.
     </div>
     <div class="photo-item">
         <img src="Kawasaki Z900 in the sunset 4K.jpg" alt="z900">
-        <div class="label">z900</div>
+        <div class="label">Z900</div>
     </div>
     <div class="photo-item">
         <img src="Ducati bike.jpg" alt="Euro 5">
-        <div class="label">euro 5</div>
+        <div class="label">Euro 5</div>
     </div>
     <div class="photo-item">
         <img src="BMW motorcycle Super bikes  Latest motorbike 2022.jpg" alt="1000r">
@@ -173,7 +152,7 @@ Publish the website in the given URL.
 </div>
 
 <footer>
-    <p>Designed and Developed by Santa's</p>
+    <p>Designed and Developed by <span class="name">Santa's</span></p>
 </footer>
 
 <script>
@@ -204,15 +183,3 @@ Publish the website in the given URL.
 </html>
 
 
-
-```
-
-## OUTPUT:
-![alt text](<Screenshot (55).png>)
-![alt text](<Screenshot (56).png>)
-![alt text](<Screenshot (57).png>)
-![alt text](<Screenshot (58).png>)
-![alt text](<Screenshot (59).png>)
-![alt text](<Screenshot (60).png>)
-## RESULT:
-The program for designing an interactive image gallery using HTML, CSS and JavaScript is executed successfully.
